@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="8">
+        <meta viewport="initial-scale:1.0, max-scale:1.0">
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="request.js"></script>
+    </head>
+    <body>
+        <h3 class="title">Informe CEP</h3>
+        <p>Digite o CEP e ao sair o campo de entereço será completado. 
+            Pode utilizar a tecla TAB após digitar o CEP</p>
+        <form>
+            <label for="cep">CEP:</label> 
+            <input type="text" id = "cep" minlength="8" maxlength="8" size="8" autofocus required onkeyup="onlyNumbers(this)" onfocusout="preenche()"> </input><br>
+            <label for="rua">Rua: </label> 
+            <input type="text" id = "rua" size="30"> </input><br>
+            <label for="bairro">Bairro: </label> 
+            <input type="text" id = "bairro"></input><br>
+            <label  for="cidades">Cidade: </label> 
+            <input type="text" id = "cidade"> </input><br>
+            <label  for="estado">Estado: </label> 
+            <input type="text" id = "estado" size="2"> </input><br>
+            <label for="IBGE">IBGE: </label> 
+            <input type="text"  id = "ibge" > </input><br>
+            <label for="ddd">ddd: </label> 
+            <input type="text"  id = "ddd"   size="2    " > </input>
+        </form>
+       
+    </body>
+</html>
